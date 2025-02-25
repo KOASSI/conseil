@@ -1,6 +1,10 @@
-/* Media Queries pour les écrans de petite taille (mobiles) */
-@media (max-width: 768px) {
- * {
+* Réinitialisation des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Styles généraux du corps */
 body {
   font-family: 'Arial', sans-serif;
@@ -21,6 +25,7 @@ header {
   z-index: 1000;
   animation: slideDown 0.5s ease forwards; /* Animation d'apparition */
 }
+
 /* Navigation */
 nav {
   display: flex;
