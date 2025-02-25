@@ -366,4 +366,94 @@ footer {
 .scroll-to-top:hover {
   background-color: #2980b9; /* Couleur au survol */
 }
+/* Media Queries pour les écrans de petite taille (mobiles) */
+@media (max-width: 768px) {
+  /* En-tête */
+  header {
+    padding: 0.5rem 0;
+  }
+
+  .logo img {
+    height: 40px; /* Réduire la taille du logo */
+  }
+
+  .nav-links {
+    display: none; /* Masquer les liens par défaut */
+    flex-direction: column;
+    background-color: #edf2f8;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex; /* Afficher les liens lorsque le menu est activé */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Carousel */
+  .carousel {
+    height: 50vh; /* Réduire la hauteur du carousel */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Réduire la taille du titre */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Réduire la taille du texte */
+  }
+
+  /* Section À propos */
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  /* Section Services */
+  .service-grid {
+    flex-direction: column; /* Afficher les services en colonne */
+  }
+
+  .service-item {
+    width: 100%; /* Prendre toute la largeur */
+    margin: 10px 0;
+  }
+
+  /* Pied de page */
+  .footer-container {
+    flex-direction: column; /* Afficher les sections en colonne */
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+/* Media Queries pour les écrans de taille moyenne (tablettes) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Section héro */
+  .hero h1 {
+    font-size: 2.5rem; /* Ajuster la taille du titre */
+  }
+
+  .hero p {
+    font-size: 1.2rem; /* Ajuster la taille du texte */
+  }
+
+  /* Section Services */
+  .service-item {
+    width: 45%; /* Ajuster la largeur des services */
+  }
+}
 
