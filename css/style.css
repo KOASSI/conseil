@@ -356,3 +356,29 @@ footer {
 .scroll-to-top:hover {
   background-color: #2980b9; /* Couleur au survol */
 }
+.menu-toggle {
+  display: none; /* Masquer par défaut */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #0a0909;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Afficher sur les mobiles */
+  }
+
+  .nav-links {
+    display: none; /* Masquer les liens par défaut */
+  }
+
+  .nav-links.active {
+    display: flex; /* Afficher les liens lorsque le menu est activé */
+  }
+}
