@@ -483,3 +483,12 @@ footer {
     display: flex; /* Afficher les liens lorsque le menu est activé */
   }
 }
+@media (max-width: 768px) {
+  .hero h1 {
+    animation: float 2s ease-in-out infinite; /* Animation plus courte pour les mobiles */
+  }
+
+  .hero p {
+    animation: float 3s ease-in-out infinite; /* Animation plus courte pour les mobiles */
+  }
+}
