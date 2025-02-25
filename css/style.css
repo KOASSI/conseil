@@ -1,32 +1,9 @@
 /* Media Queries pour les écrans de petite taille (mobiles) */
 @media (max-width: 768px) {
  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-/* Styles généraux du corps */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4; /* Couleur de fond par défaut */
-  color: #faefef;
- 
-}
-
-/* En-tête */
-header {
-  background-color: #edf2f8;
-  color: #181515;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  animation: slideDown 0.5s ease forwards; /* Animation d'apparition */
-}
+ header {
+    padding: 0.5rem 0;
+  }
 
 /* Navigation */
 nav {
