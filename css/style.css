@@ -1,9 +1,8 @@
-* Réinitialisation des styles par défaut */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@media (max-width: 768px) {
+  /* En-tête */
+  header {
+    padding: 0.5rem 0;
+  }
 
 /* Styles généraux du corps */
 body {
@@ -15,16 +14,7 @@ body {
 }
 
 /* En-tête */
-header {
-  background-color: #edf2f8;
-  color: #181515;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  animation: slideDown 0.5s ease forwards; /* Animation d'apparition */
-}
+
 
 /* Navigation */
 nav {
