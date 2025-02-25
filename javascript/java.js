@@ -87,6 +87,12 @@ res.end('Hello World!\n');
 // starts a simple http server locally on port 3000
 server.listen(3000, '127.0.0.1', () => {
 console.log('Listening on 127.0.0.1:3000');
+    const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+mobileMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 });
 
 // run with `node server.mjs`
