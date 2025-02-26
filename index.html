@@ -25,9 +25,9 @@
    <!-- Section Accueil -->
    <div class="carousel">
        <div class="carousel-images">
-           <img src="images/ju.jpg" class="carousel-image active">
-           <img src="images/jur.jpg" class="carousel-image">
-           <img src="images/juri.jpg" class="carousel-image">
+           <img src="images/ju.jpg" class="carousel-image ">
+           <img src="images/jur.jpg" class="carousel-image ">
+           <img src="images/juri.jpg" class="carousel-image ">
        </div>
        <button class="carousel-button prev" aria-label="Précédent">&#10094;</button>
        <button class="carousel-button next" aria-label="Suivant">&#10095;</button>
@@ -90,6 +90,19 @@
    <a href="#" class="scroll-to-top" id="scrollToTop">&#8593;</a>
 
    <script src="javascript/java.js"></script>
+   <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel-image');
+    const totalImages = images.length;
+
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % totalImages; // Passe à la prochaine image
+        const offset = -currentIndex * 100; // Calcule le décalage
+        document.querySelector('.carousel-images').style.transform = `translateX(${offset}vw)`;
+    }
+
+    setInterval(showNextImage, 10000); // Change d'image toutes les 30 secondes
+</script>
    
 </body>
 </html>
