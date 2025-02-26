@@ -390,6 +390,8 @@ footer {
 
   .nav-links {
     flex-direction: column; /* Navigation en colonne */
+    
+    align-items: center;
   }
 }
 
