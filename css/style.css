@@ -26,6 +26,8 @@ header {
   animation: slideDown 0.5s ease forwards; /* Animation d'apparition */
 }
 
+
+
 /* Navigation */
 nav {
   display: flex;
@@ -365,4 +367,54 @@ footer {
 
 .scroll-to-top:hover {
   background-color: #2980b9; /* Couleur au survol */
+}
+@media (max-width: 1500px) {
+  .hero h1 {
+    font-size: 50px; /* Taille ajustée */
+  }
+
+  .service-item {
+    width: 45%; /* Ajustement pour écrans plus petits */
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 40px; /* Taille ajustée */
+  }
+
+  .service-item {
+    width: 100%; /* Chaque service prend la largeur complète */
+    margin: 10px 0; /* Espacement vertical */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Navigation en colonne */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Passer à la colonne sur petits écrans */
+    align-items: center; /* Centrer les éléments */
+  }
+
+  .footer-section {
+    margin: 10px 0; /* Espacement vertical pour les petits écrans */
+    text-align: center; /* Centrer le texte pour les petits écrans */
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 14px; /* Taille de police réduite */
+  }
+
+  .hero h1 {
+    font-size: 30px; /* Taille ajustée */
+  }
+
+  .cta-button {
+    font-size: 16px; /* Taille de bouton ajustée */
+  }
 }
