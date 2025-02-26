@@ -16,11 +16,9 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="propos.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Services</a></li>
         </ul>
-        <select id="language-selector">
-          <option value="fr">Français</option>
-          <option value="en">English</option>
-        </select>
+      
     </nav>
    </header>
 
@@ -92,17 +90,7 @@
    <a href="#" class="scroll-to-top" id="scrollToTop">&#8593;</a>
 
    <script src="javascript/java.js"></script>
-   <script>
-    document.getElementById('language-selector').addEventListener('change', function() {
-        const lang = this.value;
-        document.querySelectorAll('.fr').forEach(function(el) {
-            el.style.display = lang === 'fr' ? 'block' : 'none'; // Affiche le texte français
-        });
-        document.querySelectorAll('.en').forEach(function(el) {
-            el.style.display = lang === 'en' ? 'block' : 'none'; // Affiche le texte anglais
-        });
-    });
-</script>
+   
 </body>
 </html>
 </html>
