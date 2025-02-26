@@ -385,16 +385,19 @@ footer {
         font-size: 14px; /* Réduire la taille du bouton */
     }
 }
+@media (max-width: 1500px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+ }  
 
 @media (min-width: 601px) and (max-width: 1200px) {
     body {
         font-size: 16px; /* Taille de police standard */
     }
 
-    .nav-links {
-        flex-direction: row; /* Alignement horizontal */
-        width: auto; /* Largeur automatique */
-    }
+    
 
     .form-container {
         padding: 30px; /* Padding normal */
