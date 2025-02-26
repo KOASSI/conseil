@@ -358,3 +358,67 @@ footer {
     }
 }
  
+@media screen and (min-width: 100px){ 
+    .nav-links{
+      width: 10%;
+    }
+    
+  }
+
+  /* Media Queries pour les écrans de 100px à 1500px */
+@media (min-width: 100px) and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Taille de police réduite pour petits écrans */
+        padding: 10px; /* Espacement intérieur */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Alignement vertical pour les petits écrans */
+        width: 100%; /* Prendre toute la largeur */
+    }
+
+    .form-container {
+        padding: 20px; /* Réduire le padding */
+    }
+
+    button {
+        font-size: 14px; /* Réduire la taille du bouton */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    body {
+        font-size: 16px; /* Taille de police standard */
+    }
+
+    .nav-links {
+        flex-direction: row; /* Alignement horizontal */
+        width: auto; /* Largeur automatique */
+    }
+
+    .form-container {
+        padding: 30px; /* Padding normal */
+    }
+
+    button {
+        font-size: 16px; /* Taille de police normale */
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+    body {
+        font-size: 18px; /* Taille de police agrandie */
+    }
+
+    .nav-links {
+        justify-content: space-around; /* Espacement uniforme */
+    }
+
+    .form-container {
+        max-width: 600px; /* Largeur maximale plus grande */
+    }
+
+    button {
+        font-size: 18px; /* Taille de police agrandie */
+    }
+}
