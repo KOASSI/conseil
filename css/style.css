@@ -98,8 +98,7 @@ nav {
   display: flex;
   width: 300%; /* Pour trois images */
   height: 100%;
-  transition: transform 0.5s ease-in-out;
-  filter: brightness(0.4); /* Réduit la luminosité */
+  transition: transform 1s ease-in-out;
 }
 
 .carousel-image {
@@ -107,8 +106,10 @@ nav {
   height: 100vh;
   object-fit: cover;
   flex-shrink: 0; /* Empêche les images de rétrécir */
-}
+  
+    filter: brightness(0.5); /* Ajustez la valeur pour rendre l'image plus sombre */
 
+}
 /* Boutons du carousel */
 .carousel-button {
   position: absolute;
@@ -260,6 +261,12 @@ footer {
   flex: 1;
   margin: 0 20px;
 }
+footer img {
+  width: 50px; /* Ajustez la largeur selon vos besoins */
+  height: auto; /* Conserve le ratio d'aspect */
+  object-fit: cover; /* Assure que l'image couvre la zone sans déformation */
+  border-radius: 50%; /* Optionnel : pour rendre les images rondes */
+}
 
 .footer-section h3::after {
   content: '';
@@ -390,8 +397,6 @@ footer {
 
   .nav-links {
     flex-direction: column; /* Navigation en colonne */
-    
-    align-items: center;
   }
 }
 
