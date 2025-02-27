@@ -335,6 +335,13 @@ header {
     position: relative;
     overflow: hidden;
 }
+footer img {
+  width: 50px; /* Ajustez la largeur selon vos besoins */
+  height: auto; /* Conserve le ratio d'aspect */
+  object-fit: cover; /* Assure que l'image couvre la zone sans déformation */
+  border-radius: 50%; /* Optionnel : pour rendre les images rondes */
+}
+
 
 .footer-content {
     display: flex;
